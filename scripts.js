@@ -249,4 +249,42 @@ document.addEventListener('DOMContentLoaded', function() {
         
         lastScroll = currentScroll;
     });
+
+    // Hero Image Carousel Auto Slide
+let index = 0;
+const images = document.querySelectorAll('.carousel-image');
+
+if (images.length > 0) {
+    setInterval(() => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+    }, 4000); // change every 4 seconds
+}
+
+// Fade-in animation for destination cards
+const destCards = document.querySelectorAll('.destination-card');
+
+const fadeObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      fadeObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+destCards.forEach(card => fadeObserver.observe(card));
+
+// Add in your scripts.js
+document.addEventListener("scroll", () => {
+  document.querySelectorAll(".choose-card").forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      card.classList.add("active");
+    }
+  });
+});
+
+
 });
