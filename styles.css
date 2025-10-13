@@ -1608,6 +1608,38 @@ a {
 }
 
 
+.services-detail .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust 250px as needed */
+    gap: 20px; /* space between items */
+}
+
+.destination-item {
+    display: flex;
+    align-items: flex-start; /* align icon and content at top */
+    padding: 15px;
+    background: #f9f9f9; /* optional: card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 100%; /* make it stretch to fill grid row */
+}
+
+.dest-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ff4c60; /* optional icon color */
+}
+
+.dest-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dest-content strong {
+    margin-bottom: 5px;
+}
+
+
 
 
 
