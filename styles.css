@@ -809,6 +809,20 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    .carousel-image {
+        object-fit: contain;   /* Show full image */
+        object-position: center bottom; /* Adjust position if needed */
+        height: auto;          /* Let height adjust automatically */
+        width: 100%;           /* Full width */
+    }
+
+    .hero-full {
+        height: auto;          /* Adjust height to fit image */
+        min-height: 400px;     /* Optional: minimum height */
+    }
+}
+
 /* ===================================
    Contact Page
    =================================== */
