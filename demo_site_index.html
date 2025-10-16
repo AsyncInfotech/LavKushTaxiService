@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Async Infotech — Services</title>
+  <meta name="description" content="Async Infotech - services and contact" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0ea5a3;--dark:#0f172a;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Roboto,Arial;background:linear-gradient(180deg,#f8fafc,#ffffff);color:var(--dark)}
+    .wrap{max-width:980px;margin:24px auto;padding:18px}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .title{font-weight:700}
+    .phone{background:linear-gradient(90deg,rgba(14,165,163,0.12),transparent);padding:10px 14px;border-radius:12px;font-weight:600}
+
+    h2{margin:18px 0 8px}
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .service{background:white;padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)}
+    .service h3{margin:0 0 6px}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    .contact-card{margin-top:18px;padding:16px;border-radius:12px;background:linear-gradient(180deg,#ecfffb,#ffffff);display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .contact-left{max-width:72%}
+    .cta{padding:10px 14px;border-radius:10px;background:var(--accent);color:white;font-weight:700;border:0}
+    .meta{font-size:14px;color:var(--muted);margin-top:8px}
+
+    @media (max-width:720px){.services{grid-template-columns:1fr}.header{flex-direction:column;align-items:flex-start}.contact-left{max-width:100%}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <div class="title">Async Infotech</div>
+          <div style="font-size:13px;color:var(--muted)">Web • Software Development • Design</div>
+        </div>
+      </div>
+      <div class="phone">Contact: <strong>+91 94321 40363</strong></div>
+    </header>
+
+    <main>
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Web Development</h3>
+            <p>Modern, responsive websites built with the latest technologies. From simple landing pages to complex web applications, we create digital experiences that convert.</p>
+          </div>
+
+          <div class="service">
+            <h3>Logo Design</h3>
+            <p>Creative and professional logo designs that reflect your brand’s identity and make a lasting impression on your audience.</p>
+          </div>
+
+          <div class="service">
+            <h3>Digital Marketing &amp; SEO</h3>
+            <p>Comprehensive digital marketing strategies including SEO, PPC, social media marketing, and content marketing to boost your online presence.</p>
+          </div>
+
+          <div class="service">
+            <h3>Student Projects &amp; Training</h3>
+            <p>Guidance and development support for academic projects, internships, and hands-on training programs for students in IT and software fields.</p>
+          </div>
+
+          <div class="service">
+            <h3>UI/UX Design</h3>
+            <p>User-centered design that combines aesthetics with functionality. We create intuitive interfaces that users love to interact with.</p>
+          </div>
+
+          <div class="service">
+            <h3>Windows Applications</h3>
+            <p>Custom Windows desktop applications built for specific business needs, ensuring optimal performance and user experience.</p>
+          </div>
+
+          <div class="service">
+            <h3>Custom Software Development</h3>
+            <p>Specialized in any type of website and custom software development to fit your business requirements.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-card">
+          <div class="contact-left">
+            <h3>Contact Us</h3>
+            <p class="meta">Phone: <strong>+91 94321 40363</strong><br>Email: <strong>asyncinfotech@gmil.com</strong><br>Website: <strong>www.asyncinfotech.com</strong></p>
+            <p style="color:var(--muted);margin-top:8px">Send project details or call us directly. We handle everything from simple sites to full custom software.</p>
+          </div>
+          <div>
+            <button class="cta" onclick="window.location.href='tel:+919432140363'">Call Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="margin-top:18px;color:var(--muted);font-size:13px">© Async Infotech — All rights reserved.</footer>
+  </div>
+</body>
+</html>
