@@ -1639,6 +1639,128 @@ a {
     margin-bottom: 5px;
 }
 
+/* ---------- Owner Section ---------- */
+.owner-section {
+  background: #f8fafc;
+  padding: 80px 0;
+}
+
+.owner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.owner-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+}
+
+.owner-info {
+  max-width: 600px;
+}
+
+.owner-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.owner-info p {
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ---------- Social Icons ---------- */
+.owner-social {
+  margin-top: 14px;
+  display: flex;
+  gap: 20px;
+}
+
+.owner-social a {
+  font-size: 1.8rem;
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.owner-social a:hover {
+  transform: scale(1.2);
+}
+
+.owner-social a[aria-label="Facebook"]:hover {
+  color: #1877f2;
+}
+
+.owner-social a[aria-label="YouTube"]:hover {
+  color: #ff0000;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .owner-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .owner-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .owner-info h3 {
+    font-size: 1.6rem;
+  }
+}
+
+.extra-services {
+  padding: 3rem 0;
+  background: #fffdfb;
+  text-align: center;
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+}
+.service-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
 
 
 
